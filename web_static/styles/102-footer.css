@@ -1,0 +1,16 @@
+footer{
+    color:#FFF;
+    height: 60px;
+    width:100%;
+    border-top: 1px #CCCCCC solid;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p{
+    color: #000;
+}

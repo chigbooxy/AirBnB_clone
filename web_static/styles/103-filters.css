@@ -1,0 +1,141 @@
+/* Filters section============================================ */
+.filters{
+    color: #FFF;
+    height: 70px;
+    width:100%;
+    border:1px solid #DDDDDD;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.filters .search_btn{
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    right: 30px;
+}
+
+.filters .search_btn:hover{
+    opacity: 90%;
+}
+
+/* location and amenities filters====================================== */
+
+.filters .locations,
+.amenities{
+    height: 100%;
+    width: 25%;
+    color: #000;
+    padding-left: 50px; 
+    position: relative; 
+}
+.filters .locations{
+    border-right: 1px solid #DDDDDD;
+}
+
+h3.title{
+    font-weight: 600;
+    padding-top: 15px;
+    /* padding-bottom: 10px; */
+}
+h4.subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px
+}
+
+/* Filters Drop down =================================*/
+.popover{
+    color:#FAFAFA;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: absolute;
+    padding: 20px 50px;
+    left: 0;
+    z-index: 1000;
+    transform: translateY(33px);
+    background-color: #DDDDDD;
+    display: none;
+}
+.popover li{
+    margin-bottom: 5px;
+    list-style: none;
+    color: black;
+}
+.placees .popover li:not(:first-child){
+    padding-left: 1rem;
+}
+.popover a{
+    text-decoration: none;
+    color: #000;
+}
+
+.filters .locations:hover .popover{
+    display: block;
+}
+.filters .amenities:hover .popover{
+    display: block;
+}
+
+
+/* MOBILE SCREEN DESIGN======================== */
+/* MEDIUM SCREEN */
+@media screen and (max-width: 575px) {
+    .filters{
+        width:90% ;
+        justify-content: flex-start;
+        margin: 30px;
+        margin-left: 20px;
+    }
+
+    .filters .locations,
+    .amenities{
+        width: 25%;
+        padding-left: 10px;
+    }
+    h3.title{
+        font-weight: 600;
+        font-size: 14px;
+    }
+    h4.subtitle{
+        font-weight: 400;
+        font-size: 9px;
+        bottom: 18px
+    }
+    .filters .search_btn{
+        font-size: 14px;
+        width: 25%;
+    }
+
+}
+
+/* MEDIUM SCREEN SIZES=============== */
+@media screen and (min-width:576px) and (max-width:1000px){
+  
+ .filters{
+    width: 90%;
+    margin: 30px auto;
+ }
+}
+
+/* MEDIUM SCREEN SIZES=============== */
+@media screen and (min-width:576px) and (max-width:1000px){
+  
+    h3.title{
+        padding-top: 10px;
+    }
+    h4.subtitle{
+        font-size: 12px;
+        bottom: 10px
+    }
+}
